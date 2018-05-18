@@ -1,0 +1,16 @@
+.stars > .star {
+    display: inline-block;
+}
+.star{
+    color: rgb(224, 191, 3);
+    font-size: 2rem;
+}
+.stars > .active:before,
+.stars:hover > .star:before{
+    content: '★';
+    position: absolute;
+    cursor: pointer;
+}
+.stars > .star:hover ~ .star:before{
+    content: '';
+}
